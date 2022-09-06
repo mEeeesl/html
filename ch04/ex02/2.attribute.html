@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>input attribute</title>
+</head>
+<body>
+    <form>
+        <input type='text' name='userId' id='userId' size='15'/> <br>
+        <input type='text' value='how' readonly/> <br>
+        <input type='text' placeholder='이름'/> <br>
+        <input type='text' autofocus/> <br>
+        <input type='text' minlength='3' maxlength='5' required/> <br>
+        <input type='number' min='1' max='10' step='2'/> <br>
+        <input type='date' min='2022-08-01' max='2022-08-03'/> <br>
+        <input type='time' min='09:00' max='13:00'/> <br>
+
+        <input type='submit' value='전송'/>
+        <input type='submit' formaction='#' formmethod='post' formtarget='msg'/> <br>
+        <input type='file' multiple/>
+    </form>
+</body>
+</html>
+
+<!--
+    속성 
+    attribute 고정된 속성값
+    property 변할 수 있는 속성값
+
+    name = parameter 이름 ( 숫자 or 문자 )
+    id = elements 이름 (객체이름)
+    size = 글자 수 지정
+
+    'how'가 자동입력 되는 세팅 
+
+    placeholder = 실행해보면 암
+
+    autofocus = 처음으로 입력했으면 하는 필드
+    minlength, maxlength = 글자 길이 수 제한
+    (minlength - 2글자만 입력하고 전송버튼 눌러보면 암)
+
+    min='1' max='10' 1이상 10이하
+    ( 0이나 11이상 입력하고 전송버튼 눌러보면 암)
+
+    required = 값 없으면 제출안됨
+    ( 입력하지 않고 전송 눌러보면 암 )
+
+    
+-->
